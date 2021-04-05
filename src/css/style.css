@@ -1,0 +1,96 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+.container__position {
+	text-align: center;
+	margin: 80px;
+	max-width: 1440px;
+}
+
+.container__title {
+	font-size: 35px;
+	margin-bottom: 5px;
+}
+
+.container__subtitle {
+	font-size: 20px;
+}
+
+.container {
+	padding: 20px;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+	justify-content: space-between;
+	margin: 25px 0px;
+}
+
+.col {
+	width: 30%;
+}
+
+.card {
+	margin: 20px 0;
+  padding: 20px;	
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+	.col {
+		width: 45%;
+	}
+}
+
+@media (max-width: 480px) {
+	.col {
+		width: 100%;
+	}
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination__link {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  background-color: transparent;
+  border: 0;
+  outline: none;
+}
+
+.pagination button.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.pagination button:hover:not(.active, .pagination__disabled) {
+	background-color: #ddd;
+}
+
+.pagination__disabled {
+	color: #ddd;
+	cursor: default;
+	pointer-events: none;
+}
+.select__position {
+	text-align: right;
+	margin: 15px 0;
+}
+
+select {
+	height: 40px;
+}
