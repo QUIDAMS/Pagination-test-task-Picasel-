@@ -38,10 +38,10 @@ export default class App extends Component {
 				<h2 className="container__title">Picasel</h2>
 				<p className="container__subtitle">Тестовое задание</p>
 				<div className="select__position">
-					<select  onChange={(e) => this.onPerPageChange(e)}>
-					  <option selected={this.state.perPage === 10} value={10}>10 позиций</option>
-					  <option selected={this.state.perPage === 50} value={50}>50 позиций</option>
-					  <option selected={this.state.perPage === 100} value={100}>100 позиций</option>
+					<select value={this.state.perPage} onChange={(e) => this.onPerPageChange(e)}>
+					  <option value={10}>10 позиций</option>
+					  <option value={50}>50 позиций</option>
+					  <option value={100}>100 позиций</option>
 					</select>
 				</div>
 		  	<div className="row">

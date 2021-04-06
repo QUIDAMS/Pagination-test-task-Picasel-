@@ -11,6 +11,7 @@ const Pagination = ({totalPages, currentPage, onChangeCurrentPage}) => {
 			{Array.from(Array(totalPages)).map((x, i) => {
 			  return (
 			  	<button
+			  		key={i}
 			  		className={`pagination__link ${currentPage === i && "active"}`} 
 			  		href="#"
 			  		onClick={(e) => onChangeCurrentPage(e, i)}
